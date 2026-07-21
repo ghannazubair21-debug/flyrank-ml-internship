@@ -1,0 +1,165 @@
+# Week 1 Report
+## FlyRank Machine Learning Internship
+
+**Intern:** Ghanna Zubair  
+**Track:** Machine Learning  
+**Assignment:** ML-01 – Run the Starter Notebooks  
+**Repository:** https://github.com/ghannazubair21-debug/flyrank-ml-internship
+
+---
+
+# Objective
+
+The objective of this assignment was to understand the basic workflow of a machine learning pipeline by running the provided starter notebooks, analyzing a real-world SEO dataset, comparing a rule-based approach with a machine learning model, and learning the importance of proper model evaluation.
+
+---
+
+# Notebook 01 – First Look and Discovery
+
+## Pipeline Execution
+
+The complete machine learning pipeline was executed successfully.
+
+The pipeline performed the following tasks:
+
+- Prepared feature vectors
+- Created a baseline ranking model
+- Trained multiple machine learning models
+- Evaluated model performance
+- Generated reports and visualizations
+- Exported a PDF summary
+
+### Pipeline Results
+
+| Model | Precision@50 |
+|---------|-------------|
+| Hand-written Rule | **0.240** |
+| Random Forest | **0.740** |
+
+The Random Forest model achieved approximately three times better Precision@50 than the baseline rule, demonstrating the benefit of machine learning for ranking pages requiring content refresh.
+
+---
+
+# Dataset Exploration
+
+The dataset contained approximately **30,000 pages** with multiple SEO-related features including:
+
+- Search Volume
+- CTR
+- Average Position
+- Content Age
+- Word Count
+- Impressions
+- Trend Direction
+
+---
+
+# Discoveries
+
+### Discovery 1
+
+The correlation between Search Volume and Impressions was relatively weak, indicating that higher keyword search volume does not necessarily translate into higher page traffic.
+
+### Discovery 2
+
+CTR decreased as search position became lower, confirming the expected relationship between ranking position and user click behavior.
+
+### Discovery 3
+
+Median word count was similar for both growing and declining pages, suggesting that content length alone is not a reliable indicator of page performance.
+
+---
+
+# Notebook 02 – Readable Machine Learning Model
+
+## Hand-written Rule
+
+A simple rule was created using:
+
+- Days Since Last Update
+- Impressions in the last 90 days
+
+This rule prioritized stale pages that still received significant traffic.
+
+### Performance
+
+| Metric | Score |
+|----------|-------|
+| Precision@20 | **0.900** |
+| Precision@50 | **0.680** |
+
+The rule correctly identified approximately 18 of the top 20 declining pages.
+
+---
+
+# Decision Tree Model
+
+A Decision Tree classifier with a maximum depth of 2 was trained.
+
+The model learned a small set of interpretable decision rules based on:
+
+- Impressions
+- Content Age
+- Average Position
+
+### Performance
+
+| Metric | Score |
+|----------|-------|
+| Precision@20 | **0.550** |
+| Precision@50 | **0.600** |
+
+In this experiment, the manually designed rule outperformed the shallow Decision Tree, demonstrating that domain knowledge can be highly effective for straightforward ranking tasks.
+
+---
+
+# Data Leakage Demonstration
+
+The notebook intentionally introduced the feature **trend_pct**, which directly determines the target variable.
+
+The model achieved:
+
+**Precision@50 = 1.000**
+
+This result illustrates **data leakage**, where information that would not be available during real-world prediction is unintentionally included during training.
+
+This experiment reinforced the importance of selecting only features that are available before the prediction is made.
+
+---
+
+# Experiment
+
+The Decision Tree depth was increased from **2** to **3**.
+
+### Results
+
+| Model | Precision@50 |
+|---------|-------------|
+| Depth 2 | **0.600** |
+| Depth 3 | **0.720** |
+
+The deeper model improved prediction accuracy by learning additional decision rules involving CTR and Average Position.
+
+However, the increase in model complexity also reduced interpretability, highlighting the trade-off between model performance and explainability.
+
+---
+
+# Key Learnings
+
+Throughout this assignment, I learned:
+
+- How a complete machine learning pipeline is structured.
+- How feature engineering prepares data for training.
+- How Precision@K is used to evaluate ranking models.
+- How Decision Trees make interpretable predictions.
+- Why baseline models are important for comparison.
+- How data leakage can artificially inflate model performance.
+- The trade-off between model complexity and interpretability.
+
+---
+
+# Conclusion
+
+This assignment provided practical exposure to the end-to-end workflow of machine learning using real-world SEO data. It demonstrated the importance of understanding data before modeling, comparing baseline methods with learned models, and ensuring that evaluation remains fair by avoiding data leakage.
+
+The knowledge gained during this assignment establishes a solid foundation for future work in predictive modeling, feature engineering, and explainable machine learning.
