@@ -1,49 +1,116 @@
-# 🚀 FlyRank Machine Learning Internship (July 2026)
+# 🚀 FlyRank Machine Learning Internship Portfolio (July 2026)
 
-Welcome to my internship portfolio! This repository documents my learning journey through the FlyRank Machine Learning Internship.
+Welcome to my FlyRank Machine Learning Internship portfolio!
 
-## 📌 About
+This repository documents my learning journey throughout the internship, including weekly assignments, machine learning experiments, reports, and project progress. It serves as both a learning log and a portfolio showcasing practical machine learning skills developed through real-world datasets and industry-focused tasks.
 
-This repository contains:
+---
 
-- Weekly notebooks
-- Internship reports
-- Data analysis
+## 📖 About the Internship
+
+The FlyRank Machine Learning Internship is a hands-on program focused on applying machine learning techniques to real-world SEO and content analytics problems.
+
+Throughout this internship, I will:
+
+- Learn the complete machine learning workflow
+- Explore and analyze real-world datasets
+- Build and evaluate machine learning models
+- Perform feature engineering and data preprocessing
+- Document findings through technical reports
+- Complete a capstone project
+
+---
+
+## 📂 Repository Structure
+
+```
+flyrank-ml-internship/
+│
+├── notebooks/          # Weekly Jupyter notebooks
+├── work/               # Weekly reports and documentation
+├── scripts/            # Helper scripts and ML pipeline
+├── data/               # Dataset (where applicable)
+├── outputs/            # Generated reports and model outputs
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## 📅 Progress Tracker
+
+| Week | Topic | Status |
+|------|-------------------------------|:------:|
+| Week 1 | Starter Notebooks & ML Fundamentals | ✅ Completed |
+| Week 2 | Readable Machine Learning Models | ✅ Completed |
+| Week 3 | Feature Engineering & Research | ⏳ Upcoming |
+| Week 4 | Model Development | ⏳ Upcoming |
+| Week 5 | Evaluation & Improvement | ⏳ Upcoming |
+| Week 6 | Advanced Machine Learning | ⏳ Upcoming |
+| Week 7 | Capstone Development | ⏳ Upcoming |
+| Week 8 | Final Capstone Submission | ⏳ Upcoming |
+
+---
+
+## 📄 Documentation
+
+This repository includes:
+
+- Weekly internship reports
+- Notebook observations
 - Machine learning experiments
-- Reflections
-- Screenshots
+- Data exploration
+- Model evaluation
+- Personal reflections and learnings
 
 ---
 
-## 📅 Weekly Progress
-
-| Week | Status |
-|------|--------|
-| Week 1 | ✅ Completed |
-| Week 2 | 🔄 In Progress |
-| Week 3 | ⏳ Upcoming |
-
----
-
-## 📂 Reports
-
-- 📄 Week 1 Report
-- 📄 Week 2 Report
-- 📄 Week 3 Report
-
----
-
-## 🛠 Technologies
+## 🛠️ Technologies & Tools
 
 - Python
 - Pandas
 - NumPy
 - Scikit-learn
+- Matplotlib
 - Google Colab
-- GitHub
+- Git & GitHub
+- Jupyter Notebook
 
 ---
 
-## 🎯 Goal
+## 🎯 Learning Objectives
 
-To develop practical machine learning skills by completing real-world projects, documenting my progress, and building a strong portfolio.
+Throughout this internship, I aim to:
+
+- Strengthen my machine learning fundamentals
+- Build end-to-end ML workflows
+- Improve feature engineering skills
+- Understand model evaluation techniques
+- Learn explainable and interpretable machine learning
+- Develop a professional GitHub portfolio
+- Complete a production-ready capstone project
+
+---
+
+## 📈 Current Milestone
+
+✅ Successfully completed the Week 1 starter notebooks by:
+
+- Running an end-to-end ML pipeline
+- Comparing baseline rules with machine learning models
+- Building and interpreting a Decision Tree
+- Understanding Precision@K evaluation
+- Learning how to identify and avoid data leakage
+
+---
+
+## 👨‍💻 Author
+
+**Ghanna Zubair**
+
+BS Software Engineering Student  
+Machine Learning Intern @ FlyRank (July 2026 Cohort)
+
+---
+
+> This repository will continue to grow throughout the internship as I complete new assignments, experiments, and my final capstone project.
