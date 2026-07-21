@@ -19,6 +19,14 @@ Throughout this internship, I will:
 - Document findings through technical reports
 - Complete a capstone project
 
+## 📋 General AI Fluency
+
+### Week 1
+
+- ✅ FL-01 – AI Workflow Audit and Tool Setup
+  - Workflow audit completed
+  - Claude Project configured
+  - Anthropic Academy enrolled
 ---
 
 ## 📂 Repository Structure
